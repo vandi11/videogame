@@ -44,6 +44,10 @@ public class Customer
         }
     }
 
+    public List<Customer> ListCostumer()
+    {
+
+    }
     
     public override string ToString()
     {

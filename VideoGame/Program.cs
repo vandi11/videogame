@@ -12,11 +12,11 @@ class Program
         //rentalService.AddGame(new Game("G003", "Minecraft", "Sandbox", 2011, 3.99M));
     }
     static void SeedCustomers() {
-        //rentalService.AddCustomer(new Customer(1, "Cset Elek"));
-        //rentalService.AddCustomer(new Customer(2, "Hiszt Erika"));
-        //rentalService.AddCustomer(new Customer(3, "Cicam Ica"));
-        //rentalService.AddCustomer(new Customer(4, "Idét Lenke"));
-        //rentalService.AddCustomer(new Customer(5, "Kispál Inka"));
+        rentalService.AddCustomer(new Customer(1, "Cset Elek"));
+        rentalService.AddCustomer(new Customer(2, "Hiszt Erika"));
+        rentalService.AddCustomer(new Customer(3, "Cicam Ica"));
+        rentalService.AddCustomer(new Customer(4, "Idét Lenke"));
+        rentalService.AddCustomer(new Customer(5, "Kispál Inka"));
     }
 
     static void DisplayInfo(IEnumerable<object> lista) {
@@ -86,7 +86,7 @@ class Program
             switch (choice)
             {
                 case "1":
-                   
+                    DisplayInfo(RentalService.ListGame());
                     break; 
                 case "2":
                     
