@@ -9,7 +9,7 @@ public class Game
     public bool IsAvailable { get; set; }
     public decimal PricePerDay { get; set; }
 
-    // Konstruktor
+    
     public Game(string gameID, string title, string genre, int releaseYear, decimal pricePerDay)
     {
         GameID = gameID;
@@ -17,10 +17,10 @@ public class Game
         Genre = genre;
         ReleaseYear = releaseYear;
         PricePerDay = pricePerDay;
-        IsAvailable = true; // Alapértelmezett érték: kölcsönözhető
+        IsAvailable = true;
     }
 
-    // ToString metódus felülírása
+    
     public override string ToString()
     {
         return $"{Title} ({Genre}, {ReleaseYear}) - ID: {GameID}, Ár/Nap: {PricePerDay}, Elérhető: {IsAvailable}";
